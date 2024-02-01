@@ -8,6 +8,28 @@
     android:backgroundTint="@color/white"
     tools:context=".presentation.MainActivity">
 
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_winning_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_downward_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        />
+
     <com.team.gamecircle.presentation.CircleView
         android:id="@+id/circle_view_custom"
         android:layout_width="350dp"
@@ -17,7 +39,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.team.gamecircle.presentation.ResultCustomView
+        android:id="@+id/result_custom_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        />
+
     <Button
+        android:id="@+id/button_spin_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/result_custom_view"
+        android:backgroundTint="@color/background_button"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/spin_again_text_btn"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/button_spin_drum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/circle_view_custom"

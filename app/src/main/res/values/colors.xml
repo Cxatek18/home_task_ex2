@@ -10,4 +10,5 @@
     <color name="blue">#0051A6</color>
     <color name="violet">#9412E6</color>
     <color name="background_button">#4A8C5D</color>
+    <color name="background_button_block">#98D5AA</color>
 </resources>
